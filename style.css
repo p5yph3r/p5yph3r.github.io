@@ -5,8 +5,8 @@ body {
 body:after {
   content: '';
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 5px;
+  left: 5px;
   right: 0px;
   bottom: 0px;
   z-index: 1000;
@@ -17,6 +17,7 @@ body:after {
   mix-blend-mode: color-burn;
   pointer-events: none;
 }
+/*--------------------------------------------------*/
 body .text, body .text > * {
   position: absolute;
   top: 30%;
@@ -41,6 +42,7 @@ body .text .b {
   animation-delay: -0.33s;
   left: 0.5px;
 }
+/*--------------------------------------------------*/
 @keyframes giggle {
   0%, 100% {
     transform: translate(-50%, -50%) translateY(-2px);
@@ -57,9 +59,11 @@ body .text .b {
     background-position: 0px 25px;
   }
 }
+/*--------------------------------------------------*/
+/*the logo things*/
 body .logo, body .logo > * {
   position: absolute;
-  top: 80%;
+  top: 90%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -67,6 +71,7 @@ body .logo > * {
   font-size: 100px;
   animation: giggle 1s ease infinite;
   mix-blend-mode: difference;
+  margin: 2px;
 }
 body .logo .x {
   color: #f00;
@@ -81,3 +86,32 @@ body .logo .z {
   animation-delay: -0.33s;
   left: 0.5px;
 }
+/*--------------------------------------------------*/
+    /* Add a black background color to the top navigation */
+    .topnav {
+        background-color: #000;
+        overflow: hidden;
+    }
+
+    /* Style the links inside the navigation bar */
+    .topnav a {
+        float: left;
+        color: #00ff00;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+
+    /* Change the color of links on hover */
+    .topnav a:hover {
+        background-color: #00ff00;
+        color: black;
+    }
+
+    /* Add a color to the active/current link */
+    .topnav a.active {
+        background-color: #000;
+        color: white;
+    }
+  /*-----------------------------------------*/
